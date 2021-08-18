@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SME Manu Collection</string>
+    <string name="enter_note_here">enter_note_here</string>
+    <string name="maximum_retail_price">Maximum Retail Price</string>
+
+    <string name="landing">Landing</string>
+    <string name="enter_product_name">Enter Product Name</string>
+    <string name="enter_the_maximum_retail_price_here">Enter the Maximum Retail Price here</string>
+    <string name="enter_the_landing_amount_here">Enter the Landing Amount here</string>
+    <string name="save_the_item">Save the Item</string>
+    <string name="insert_image">Insert Image</string>
+    <string name="product_name">Product Name</string>
+</resources>

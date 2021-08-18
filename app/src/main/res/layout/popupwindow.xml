@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF">
+
+    <TextView
+        android:id="@+id/ProductNameheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintTop_toTopOf="parent"
+        android:layout_constraintRight_toRightOf="parent"
+        android:layout_constraintBottom_toTopOf="@+id/ProductNameEditText"
+        android:padding="15dp"
+        android:textStyle="bold"
+        android:text="@string/product_name"
+
+        android:textSize="15sp"
+
+        android:background="#40C4FF"
+        android:fontFamily="sans-serif"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <EditText
+        android:id="@+id/ProductNameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_constraintBottom_toTopOf="@+id/MRPheading"
+        android:layout_constraintTop_toBottomOf="@+id/ProductNameheading"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintRight_toRightOf="parent"
+        android:hint="@string/enter_product_name"
+        android:hintTextColor="#757575"
+        android:importantForAutofill="no"
+        android:inputType="text"
+        android:minHeight="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="92dp" />
+
+    <TextView
+        android:id="@+id/MRPheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_constraintTop_toBottomOf="@+id/ProductNameEditText"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintRight_toRightOf="parent"
+        android:layout_constraintBottom_toTopOf="@+id/MRPEditText"
+        android:padding="15dp"
+        android:text="@string/maximum_retail_price"
+        android:textSize="14sp"
+        android:background="
+#40C4FF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="178dp" />
+
+    <EditText
+        android:id="@+id/MRPEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_constraintBottom_toTopOf="@+id/Landingheading"
+
+        android:layout_constraintTop_toBottomOf="@+id/MRPheading"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintRight_toRightOf="parent"
+        android:hint="@string/enter_the_maximum_retail_price_here"
+        android:hintTextColor="#757575"
+        android:importantForAutofill="no"
+        android:inputType="numberDecimal"
+        android:minHeight="48dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="33dp"
+        tools:layout_editor_absoluteY="271dp" />
+
+    <TextView
+        android:id="@+id/Landingheading"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_constraintTop_toBottomOf="@+id/MRPEditText"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintBottom_toTopOf="@+id/LandingEditText"
+        android:layout_constraintRight_toRightOf="parent"
+        android:padding="15dp"
+        android:text="@string/landing"
+        android:background="
+#40C4FF"
+        android:textStyle="bold"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="364dp" />
+
+    <EditText
+        android:id="@+id/LandingEditText"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_constraintBottom_toTopOf="@+id/AddImage"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintTop_toBottomOf="@+id/Landingheading"
+        android:layout_constraintRight_toRightOf="parent"
+        android:hint="@string/enter_the_landing_amount_here"
+        android:hintTextColor="#757575"
+        android:importantForAutofill="no"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="10dp"
+        android:inputType="numberDecimal"
+        tools:ignore="TextContrastCheck"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="435dp" />
+
+    <ImageButton
+        android:id="@+id/AddImage"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_constraintBottom_toTopOf="@+id/SaveButton"
+        android:layout_constraintTop_toBottomOf="@+id/LandingEditText"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintRight_toRightOf="parent"
+        android:minHeight="60dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginRight="100dp"
+        android:contentDescription="@string/insert_image"
+        android:labelFor="@id/AddImage"
+        android:onClick="InsertPhoto"
+        android:src="@drawable/ic_add_image"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="529dp" />
+
+    <ImageButton
+        android:id="@+id/SaveButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_constraintTop_toBottomOf="@+id/AddImage"
+        android:layout_constraintLeft_toLeftOf="parent"
+        android:layout_constraintRight_toRightOf="parent"
+        android:contentDescription="@string/save_the_item"
+        android:labelFor="@id/SaveButton"
+        android:minHeight="55dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:src="@drawable/ic_save_button"
+        tools:layout_editor_absoluteX="-101dp"
+        tools:layout_editor_absoluteY="614dp"
+        android:background="BB86FC"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

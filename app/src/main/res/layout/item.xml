@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="12dp"
+    android:background="#abcdef">
+
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="125dp"
+        android:layout_height="150dp"
+        android:scaleType="fitXY"
+        app:layout_constraintRight_toLeftof="@+id/PN"
+        app:layout_constraintBottom_toBottomof="parent"
+        app:layout_constraintLeft_toLeftof="parent"
+        app:layout_constraintTop_toTopof="parent"
+        tools:ignore="ContentDescription,MissingConstraints"
+        tools:src="@drawable/ssujata_picture" />
+
+    <TextView
+        android:id="@+id/PN"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/Landing"
+
+        app:layout_constraintLeft_toRightOf="@+id/Image"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="ITEM NAME:" />
+
+    <TextView
+        android:id="@+id/Landing"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toTopOf="@+id/MRP"
+       app:layout_constraintLeft_toRightOf="@+id/Image"
+        app:layout_constraintTop_toBottomOf="@+id/PN"
+        tools:ignore="MissingConstraints"
+        tools:text="LANDING:" />
+
+    <TextView
+        android:id="@+id/MRP"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:textSize="14dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@+id/Image"
+        app:layout_constraintTop_toBottomOf="@+id/Landing"
+        tools:text="MRP:" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="UPDATE"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="4dp"
+        android:text="DELETE"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
