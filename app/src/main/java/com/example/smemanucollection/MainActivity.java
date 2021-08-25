@@ -25,4 +25,9 @@ public class MainActivity extends AppCompatActivity {
 
     public void onClick(View view) {
     }
+
+
+    public void UpdateItem(View view) {
+        startActivity(new Intent(MainActivity.this,UpdatePop.class));
+    }
 }
